@@ -1,4 +1,4 @@
-geopaparazzi
+MTISIG
 ============
 
-Please start here: http://geopaparazzi.github.io/geopaparazzi/
+Começe por aqui: http://integracaomt.github.io/mtisig/
