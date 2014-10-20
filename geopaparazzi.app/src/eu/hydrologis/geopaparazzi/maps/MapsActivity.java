@@ -64,7 +64,6 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.RelativeLayout.LayoutParams;
-import android.widget.SlidingDrawer;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -162,7 +161,6 @@ public class MapsActivity extends MapActivity implements OnTouchListener, OnClic
     private static final String ARE_BUTTONSVISIBLE_OPEN = "ARE_BUTTONSVISIBLE_OPEN"; //$NON-NLS-1$
     private DecimalFormat formatter = new DecimalFormat("00"); //$NON-NLS-1$
     private MapView mapView;
-    private SlidingDrawer osmSlidingDrawer;
     private SharedPreferences preferences;
     private boolean doOsm;
 
@@ -245,7 +243,7 @@ public class MapsActivity extends MapActivity implements OnTouchListener, OnClic
         if (keepScreenOn) {
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         }
-        boolean areButtonsVisible = preferences.getBoolean(ARE_BUTTONSVISIBLE_OPEN, false);
+        boolean areButtonsVisible = preferences.getBoolean(ARE_BUTTONSVISIBLE_OPEN, true);
 
         /*
          * create main mapview
@@ -333,7 +331,7 @@ public class MapsActivity extends MapActivity implements OnTouchListener, OnClic
         if (areButtonsVisible) {
             setAllButtoonsEnablement(true);
         } else {
-            setAllButtoonsEnablement(false);
+            setAllButtoonsEnablement(true);
         }
         EditingView editingView = (EditingView) findViewById(R.id.editingview);
         LinearLayout editingToolsLayout = (LinearLayout) findViewById(R.id.editingToolsLayout);
@@ -509,21 +507,16 @@ public class MapsActivity extends MapActivity implements OnTouchListener, OnClic
         int visibility = View.VISIBLE;
         if (categoriesNamesArray == null) {
             categoriesNamesArray = new String[]{""}; //$NON-NLS-1$
-            visibility = View.GONE; // invisible
+            visibility = View.VISIBLE; // invisible
         }
-        doOsm = visibility != View.GONE;
+        doOsm = visibility != View.VISIBLE;
         boolean doOsmPref = preferences.getBoolean(Constants.PREFS_KEY_DOOSM, false);
         doOsm = doOsm && doOsmPref;
         if (!doOsm) {
-            visibility = View.GONE; // invisible
+            visibility = View.VISIBLE; // invisible
         }
 
         final String[] categoriesNamesArrayFinal = categoriesNamesArray;
-
-        // slidingdrawer
-        final int slidingId = R.id.osmslide;
-        osmSlidingDrawer = (SlidingDrawer) findViewById(slidingId);
-        osmSlidingDrawer.setVisibility(visibility);
 
         if (doOsm) {
             GridView buttonGridView = (GridView) findViewById(R.id.osmcategoriesview);
@@ -1462,11 +1455,11 @@ public class MapsActivity extends MapActivity implements OnTouchListener, OnClic
             listBookmarksButton.setVisibility(View.VISIBLE);
             toggleMeasuremodeButton.setVisibility(View.VISIBLE);
         } else {
-            addnotebytagButton.setVisibility(View.GONE);
-            addBookmarkButton.setVisibility(View.GONE);
-            listNotesButton.setVisibility(View.GONE);
-            listBookmarksButton.setVisibility(View.GONE);
-            toggleMeasuremodeButton.setVisibility(View.GONE);
+            addnotebytagButton.setVisibility(View.VISIBLE);
+            addBookmarkButton.setVisibility(View.VISIBLE);
+            listNotesButton.setVisibility(View.VISIBLE);
+            listBookmarksButton.setVisibility(View.VISIBLE);
+            toggleMeasuremodeButton.setVisibility(View.VISIBLE);
         }
     }
 
@@ -1483,7 +1476,7 @@ public class MapsActivity extends MapActivity implements OnTouchListener, OnClic
 
         int visibility = View.VISIBLE;
         if (!enable) {
-            visibility = View.GONE;
+            visibility = View.VISIBLE;
         }
         addnotebytagButton.setVisibility(visibility);
         addBookmarkButton.setVisibility(visibility);
@@ -1505,7 +1498,7 @@ public class MapsActivity extends MapActivity implements OnTouchListener, OnClic
                 startActivity(editableLayersIntent);
                 return true;
             case R.id.menu_map_btn:
-                boolean areButtonsVisible = preferences.getBoolean(ARE_BUTTONSVISIBLE_OPEN, false);
+                boolean areButtonsVisible = preferences.getBoolean(ARE_BUTTONSVISIBLE_OPEN, true);
                 setAllButtoonsEnablement(!areButtonsVisible);
                 Editor edit = preferences.edit();
                 edit.putBoolean(ARE_BUTTONSVISIBLE_OPEN, !areButtonsVisible);

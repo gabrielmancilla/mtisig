@@ -8,11 +8,11 @@ package org.dsandler.apps.markers;
 
 public final class R {
 	public static final class attr {
-		public static final int color = 0x7f010004;
-		public static final int interpolator = 0x7f010002;
-		public static final int penType = 0x7f010003;
-		public static final int strokeWidthMax = 0x7f010000;
-		public static final int strokeWidthMin = 0x7f010001;
+		public static final int color = 0x7f01000b;
+		public static final int interpolator = 0x7f010009;
+		public static final int penType = 0x7f01000a;
+		public static final int strokeWidthMax = 0x7f010007;
+		public static final int strokeWidthMin = 0x7f010008;
 	}
 	public static final class color {
 		public static final int btn_bg = 0x7f080000;
@@ -125,13 +125,13 @@ public final class R {
 		public static final int ActionBar_Text = 0x7f0d0006;
 	}
 	public static final class styleable {
-		public static final int[] PenToolButton = { 0x7f010000, 0x7f010001, 0x7f010002 };
+		public static final int[] PenToolButton = { 0x7f010007, 0x7f010008, 0x7f010009 };
 		public static final int PenToolButton_interpolator = 2;
 		public static final int PenToolButton_strokeWidthMax = 0;
 		public static final int PenToolButton_strokeWidthMin = 1;
-		public static final int[] PenTypeButton = { 0x7f010003 };
+		public static final int[] PenTypeButton = { 0x7f01000a };
 		public static final int PenTypeButton_penType = 0;
-		public static final int[] SwatchButton = { 0x7f010004 };
+		public static final int[] SwatchButton = { 0x7f01000b };
 		public static final int SwatchButton_color = 0;
 	}
 }

@@ -15,14 +15,14 @@ public final class R {
 		public static final int array_widths = 0x7f070006;
 	}
 	public static final class attr {
-		public static final int collapsible = 0x7f010005;
-		public static final int handle_trackball_press = 0x7f010009;
-		public static final int indent_width = 0x7f010008;
-		public static final int indicator_background = 0x7f01000b;
-		public static final int indicator_gravity = 0x7f01000a;
-		public static final int row_background = 0x7f01000c;
-		public static final int src_collapsed = 0x7f010007;
-		public static final int src_expanded = 0x7f010006;
+		public static final int collapsible = 0x7f01000c;
+		public static final int handle_trackball_press = 0x7f010010;
+		public static final int indent_width = 0x7f01000f;
+		public static final int indicator_background = 0x7f010012;
+		public static final int indicator_gravity = 0x7f010011;
+		public static final int row_background = 0x7f010013;
+		public static final int src_collapsed = 0x7f01000e;
+		public static final int src_expanded = 0x7f01000d;
 	}
 	public static final class color {
 		public static final int formbgcolor = 0x7f080006;
@@ -553,7 +553,7 @@ public final class R {
 		public static final int mapsdir_treeview_VerticalDividerForList = 0x7f0d0015;
 	}
 	public static final class styleable {
-		public static final int[] TreeViewList = { 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c };
+		public static final int[] TreeViewList = { 0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010012, 0x7f010013 };
 		public static final int TreeViewList_collapsible = 0;
 		public static final int TreeViewList_handle_trackball_press = 4;
 		public static final int TreeViewList_indent_width = 3;

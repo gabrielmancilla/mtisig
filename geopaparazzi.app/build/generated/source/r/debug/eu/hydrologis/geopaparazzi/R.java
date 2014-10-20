@@ -51,16 +51,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int collapsible=0x7f010005;
-        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int color=0x7f010004;
+        public static final int allowSingleTap=0x7f010005;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -68,7 +59,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int handle_trackball_press=0x7f010009;
+        public static final int animateOnClick=0x7f010006;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -78,13 +69,56 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int indent_width=0x7f010008;
+        public static final int bottomOffset=0x7f010003;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int collapsible=0x7f01000c;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int color=0x7f01000b;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int content=0x7f010001;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int handle=0x7f010000;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int handle_trackball_press=0x7f010010;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int indent_width=0x7f01000f;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int indicator_background=0x7f01000b;
+        public static final int indicator_background=0x7f010012;
         /** <p>Must be one or more (separated by '|') of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -113,11 +147,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             </td></tr>
 </table>
          */
-        public static final int indicator_gravity=0x7f01000a;
+        public static final int indicator_gravity=0x7f010011;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int interpolator=0x7f010002;
+        public static final int interpolator=0x7f010009;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int orientation=0x7f010002;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -130,25 +172,25 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>fountainpen</code></td><td>3</td><td></td></tr>
 </table>
          */
-        public static final int penType=0x7f010003;
+        public static final int penType=0x7f01000a;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int row_background=0x7f01000c;
+        public static final int row_background=0x7f010013;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int src_collapsed=0x7f010007;
+        public static final int src_collapsed=0x7f01000e;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int src_expanded=0x7f010006;
+        public static final int src_expanded=0x7f01000d;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -158,7 +200,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int strokeWidthMax=0x7f010000;
+        public static final int strokeWidthMax=0x7f010007;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -168,7 +210,17 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int strokeWidthMin=0x7f010001;
+        public static final int strokeWidthMin=0x7f010008;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int topOffset=0x7f010004;
     }
     public static final class color {
         public static final int btn_bg=0x7f080000;
@@ -436,8 +488,8 @@ containing a value of this type.
         public static final int action_bar_title=0x7f090016;
         public static final int actionbar=0x7f09001e;
         public static final int actionbar_contents=0x7f09001f;
-        public static final int addbookmarkbutton=0x7f0900f9;
-        public static final int addnotebytagbutton=0x7f0900f7;
+        public static final int addbookmarkbutton=0x7f0900fd;
+        public static final int addnotebytagbutton=0x7f0900fb;
         public static final int airbrush=0x7f090002;
         public static final int airbrush_marker=0x7f090152;
         public static final int alertbutton=0x7f090036;
@@ -451,12 +503,12 @@ containing a value of this type.
         public static final int arrow_up=0x7f09011d;
         public static final int askcoordlabel=0x7f0900c2;
         public static final int authortext=0x7f090158;
-        public static final int battery=0x7f0900fc;
+        public static final int battery=0x7f0900f0;
         public static final int bluetoothActiveLabel=0x7f09002c;
         public static final int bookmarkrowtext=0x7f090035;
         public static final int bookmarksExportButton=0x7f090073;
         public static final int bookmarksImportButton=0x7f0900bd;
-        public static final int bookmarkslistbutton=0x7f0900fa;
+        public static final int bookmarkslistbutton=0x7f0900fe;
         public static final int bookmarksrowlayout=0x7f090033;
         public static final int bottom=0x7f090005;
         public static final int bottomButtonsLayout=0x7f090079;
@@ -470,7 +522,7 @@ containing a value of this type.
         public static final int cancelbutton=0x7f090032;
         public static final int center=0x7f09000c;
         public static final int center_horizontal=0x7f09000a;
-        public static final int center_on_gps_btn=0x7f0900fd;
+        public static final int center_on_gps_btn=0x7f0900f1;
         public static final int center_vertical=0x7f090008;
         public static final int chart=0x7f09011b;
         public static final int checkHalo=0x7f0900d6;
@@ -537,8 +589,8 @@ containing a value of this type.
         public static final int drawingSurface=0x7f090069;
         public static final int editableButton=0x7f09006f;
         public static final int editbutton=0x7f09010b;
-        public static final int editingToolsLayout=0x7f090105;
-        public static final int editingview=0x7f0900f1;
+        public static final int editingToolsLayout=0x7f0900f5;
+        public static final int editingview=0x7f090101;
         public static final int endtime_label=0x7f09009e;
         public static final int enterLocationValue=0x7f09007f;
         public static final int errorToggleButton=0x7f0900d8;
@@ -589,7 +641,7 @@ containing a value of this type.
         public static final int imagevisibletext=0x7f0900af;
         public static final int infoToggleButton=0x7f0900dc;
         public static final int infoToggleLayout=0x7f0900db;
-        public static final int innerlayout=0x7f0900f0;
+        public static final int innerlayout=0x7f0900f3;
         public static final int kmzExportButton=0x7f090070;
         public static final int labelFieldLabel=0x7f090154;
         public static final int labelFieldSpinner=0x7f090155;
@@ -600,7 +652,7 @@ containing a value of this type.
         public static final int left=0x7f090006;
         public static final int linearLayout1=0x7f090108;
         public static final int listFragment=0x7f09007d;
-        public static final int listnotesbutton=0x7f0900f8;
+        public static final int listnotesbutton=0x7f0900fc;
         public static final int load=0x7f090023;
         public static final int logAbsCheckbox=0x7f0900b8;
         public static final int logCheckbox=0x7f0900b6;
@@ -620,11 +672,11 @@ containing a value of this type.
         public static final int map_zoom=0x7f0900ea;
         public static final int mapname=0x7f0900e9;
         public static final int mapproplabel=0x7f0900e8;
-        public static final int maptoolslayout=0x7f0900f6;
+        public static final int maptoolslayout=0x7f0900fa;
         public static final int maxzoom_spinner=0x7f09004b;
         public static final int memoryToggleButton=0x7f0900e2;
         public static final int memoryToggleLayout=0x7f0900e1;
-        public static final int menu_map_btn=0x7f090104;
+        public static final int menu_map_btn=0x7f0900f4;
         public static final int minzoom_spinner=0x7f090049;
         public static final int name=0x7f09005f;
         public static final int navButton=0x7f090050;
@@ -638,18 +690,18 @@ containing a value of this type.
         public static final int okbutton=0x7f090031;
         public static final int orText=0x7f090131;
         public static final int osm_button_linearlayout=0x7f09010d;
-        public static final int osm_frameLayout=0x7f090106;
+        public static final int osm_frameLayout=0x7f090100;
         public static final int osm_item_image=0x7f09010e;
         public static final int osm_item_text=0x7f09010f;
-        public static final int osmcategoriesview=0x7f090102;
+        public static final int osmcategoriesview=0x7f090105;
         public static final int osmform_cancel=0x7f090113;
         public static final int osmform_linear=0x7f090111;
         public static final int osmform_ok=0x7f090112;
         public static final int osmform_textview=0x7f090110;
         public static final int osmgridview=0x7f09013a;
-        public static final int osmslide=0x7f0900ff;
-        public static final int osmslidecontent=0x7f090100;
-        public static final int osmslidehandle=0x7f090101;
+        public static final int osmslide=0x7f090102;
+        public static final int osmslidecontent=0x7f090103;
+        public static final int osmslidehandle=0x7f090104;
         public static final int osmtagsgridview=0x7f090115;
         public static final int otherLabel=0x7f0900a7;
         public static final int overflow=0x7f090027;
@@ -681,7 +733,7 @@ containing a value of this type.
         public static final int scroll=0x7f09011e;
         public static final int scroller=0x7f090119;
         public static final int search_box=0x7f090039;
-        public static final int seekbarlayout=0x7f0900f2;
+        public static final int seekbarlayout=0x7f0900f6;
         public static final int sep0=0x7f090018;
         public static final int sep1=0x7f09001a;
         public static final int sep3=0x7f09001c;
@@ -709,7 +761,7 @@ containing a value of this type.
         public static final int starttime_label=0x7f09009d;
         public static final int statusupdatebutton=0x7f090099;
         public static final int strut=0x7f09009a;
-        public static final int syncosmbutton=0x7f090103;
+        public static final int syncosmbutton=0x7f090106;
         public static final int tableLayout1=0x7f09002a;
         public static final int tableNameView=0x7f090074;
         public static final int tableRow1=0x7f09002b;
@@ -739,7 +791,7 @@ containing a value of this type.
         public static final int textfilterText=0x7f090149;
         public static final int title=0x7f090012;
         public static final int titletext=0x7f09013c;
-        public static final int toggleEditingButton=0x7f0900fe;
+        public static final int toggleEditingButton=0x7f0900f2;
         public static final int toggleMapButton=0x7f090123;
         public static final int toggleMapurlButton=0x7f090124;
         public static final int toggleMbtilesButton=0x7f090125;
@@ -747,7 +799,7 @@ containing a value of this type.
         public static final int toggleRasterLite2Button=0x7f090126;
         public static final int toggleTablesButton=0x7f090053;
         public static final int toggleViewsButton=0x7f090054;
-        public static final int togglemeasuremodebutton=0x7f0900fb;
+        public static final int togglemeasuremodebutton=0x7f0900ff;
         public static final int tools=0x7f0900e6;
         public static final int top=0x7f090004;
         public static final int trackLength_label=0x7f09009f;
@@ -768,9 +820,9 @@ containing a value of this type.
         public static final int width_spinner=0x7f090043;
         public static final int widthspinner=0x7f09006c;
         public static final int zoomLabel=0x7f0900a4;
-        public static final int zoomin=0x7f0900f3;
-        public static final int zoomlevel=0x7f0900f4;
-        public static final int zoomout=0x7f0900f5;
+        public static final int zoomin=0x7f0900f7;
+        public static final int zoomlevel=0x7f0900f8;
+        public static final int zoomout=0x7f0900f9;
         public static final int zoomtoButton=0x7f090063;
     }
     public static final class layout {
@@ -1371,6 +1423,126 @@ containing a value of this type.
         public static final int pref=0x7f050001;
     }
     public static final class styleable {
+        /** Attributes that can be used with a MySlider.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #MySlider_allowSingleTap eu.hydrologis.geopaparazzi:allowSingleTap}</code></td><td></td></tr>
+           <tr><td><code>{@link #MySlider_animateOnClick eu.hydrologis.geopaparazzi:animateOnClick}</code></td><td></td></tr>
+           <tr><td><code>{@link #MySlider_bottomOffset eu.hydrologis.geopaparazzi:bottomOffset}</code></td><td></td></tr>
+           <tr><td><code>{@link #MySlider_content eu.hydrologis.geopaparazzi:content}</code></td><td></td></tr>
+           <tr><td><code>{@link #MySlider_handle eu.hydrologis.geopaparazzi:handle}</code></td><td></td></tr>
+           <tr><td><code>{@link #MySlider_orientation eu.hydrologis.geopaparazzi:orientation}</code></td><td></td></tr>
+           <tr><td><code>{@link #MySlider_topOffset eu.hydrologis.geopaparazzi:topOffset}</code></td><td></td></tr>
+           </table>
+           @see #MySlider_allowSingleTap
+           @see #MySlider_animateOnClick
+           @see #MySlider_bottomOffset
+           @see #MySlider_content
+           @see #MySlider_handle
+           @see #MySlider_orientation
+           @see #MySlider_topOffset
+         */
+        public static final int[] MySlider = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004, 0x7f010005, 0x7f010006
+        };
+        /**
+          <p>This symbol is the offset where the {@link eu.hydrologis.geopaparazzi.R.attr#allowSingleTap}
+          attribute's value can be found in the {@link #MySlider} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name eu.hydrologis.geopaparazzi:allowSingleTap
+        */
+        public static final int MySlider_allowSingleTap = 5;
+        /**
+          <p>This symbol is the offset where the {@link eu.hydrologis.geopaparazzi.R.attr#animateOnClick}
+          attribute's value can be found in the {@link #MySlider} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name eu.hydrologis.geopaparazzi:animateOnClick
+        */
+        public static final int MySlider_animateOnClick = 6;
+        /**
+          <p>This symbol is the offset where the {@link eu.hydrologis.geopaparazzi.R.attr#bottomOffset}
+          attribute's value can be found in the {@link #MySlider} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name eu.hydrologis.geopaparazzi:bottomOffset
+        */
+        public static final int MySlider_bottomOffset = 3;
+        /**
+          <p>This symbol is the offset where the {@link eu.hydrologis.geopaparazzi.R.attr#content}
+          attribute's value can be found in the {@link #MySlider} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name eu.hydrologis.geopaparazzi:content
+        */
+        public static final int MySlider_content = 1;
+        /**
+          <p>This symbol is the offset where the {@link eu.hydrologis.geopaparazzi.R.attr#handle}
+          attribute's value can be found in the {@link #MySlider} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name eu.hydrologis.geopaparazzi:handle
+        */
+        public static final int MySlider_handle = 0;
+        /**
+          <p>This symbol is the offset where the {@link eu.hydrologis.geopaparazzi.R.attr#orientation}
+          attribute's value can be found in the {@link #MySlider} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name eu.hydrologis.geopaparazzi:orientation
+        */
+        public static final int MySlider_orientation = 2;
+        /**
+          <p>This symbol is the offset where the {@link eu.hydrologis.geopaparazzi.R.attr#topOffset}
+          attribute's value can be found in the {@link #MySlider} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name eu.hydrologis.geopaparazzi:topOffset
+        */
+        public static final int MySlider_topOffset = 4;
         /** Attributes that can be used with a PenToolButton.
            <p>Includes the following attributes:</p>
            <table>
@@ -1386,7 +1558,7 @@ containing a value of this type.
            @see #PenToolButton_strokeWidthMin
          */
         public static final int[] PenToolButton = {
-            0x7f010000, 0x7f010001, 0x7f010002
+            0x7f010007, 0x7f010008, 0x7f010009
         };
         /**
           <p>This symbol is the offset where the {@link eu.hydrologis.geopaparazzi.R.attr#interpolator}
@@ -1441,7 +1613,7 @@ containing a value of this type.
            @see #PenTypeButton_penType
          */
         public static final int[] PenTypeButton = {
-            0x7f010003
+            0x7f01000a
         };
         /**
           <p>This symbol is the offset where the {@link eu.hydrologis.geopaparazzi.R.attr#penType}
@@ -1576,7 +1748,7 @@ containing a value of this type.
            @see #SwatchButton_color
          */
         public static final int[] SwatchButton = {
-            0x7f010004
+            0x7f01000b
         };
         /**
           <p>This symbol is the offset where the {@link eu.hydrologis.geopaparazzi.R.attr#color}
@@ -1637,8 +1809,8 @@ containing a value of this type.
            @see #TreeViewList_src_expanded
          */
         public static final int[] TreeViewList = {
-            0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008,
-            0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c
+            0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f,
+            0x7f010010, 0x7f010011, 0x7f010012, 0x7f010013
         };
         /**
           <p>This symbol is the offset where the {@link eu.hydrologis.geopaparazzi.R.attr#collapsible}
